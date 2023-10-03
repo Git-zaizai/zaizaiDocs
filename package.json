@@ -1,0 +1,22 @@
+{
+  "name": "vitepress-nav-template",
+  "version": "1.0.0",
+  "description": "基于 VitePress 打造个人前端导航网站",
+  "scripts": {
+    "dev": "vitepress dev docs --port=7373",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview",
+    "docs:dev": "vitepress dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@mdit-vue/shared": "^1.0.0",
+    "@types/node": "^20.8.0",
+    "medium-zoom": "^1.0.8",
+    "sass": "^1.68.0",
+    "vitepress": "1.0.0-rc.20",
+    "vue": "^3.3.4"
+  }
+}
