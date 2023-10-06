@@ -10,6 +10,7 @@
 /* nav 换行问题（6 个还是有点小多，后面看看怎么优化） */
 @media (max-width: 960px) {
   .VPNav {
+
     .VPNavBarMenuLink,
     .VPNavBarMenuGroup .button {
       padding-left: 10px;
@@ -22,3 +23,12 @@
 .custom-block .custom-block-title {
   font-size: 16px;
 }
+
+.VPMenuGroup .VPMenuLink>a {
+  padding-left: 20px;
+}
+
+/* .VPMenuGroup>p {
+  border-bottom: 1px solid var(--vp-c-divider);
+  margin-bottom: 3px;
+} */

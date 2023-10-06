@@ -50,6 +50,7 @@ const svg = computed(() => {
   --m-nav-icon-size: 24px;
   --m-nav-box-gap: 12px;
 
+  text-decoration: initial;
   display: block;
   border: 1px solid var(--vp-c-bg-soft);
   border-radius: 8px;
@@ -59,7 +60,6 @@ const svg = computed(() => {
   &:hover {
     box-shadow: var(--vp-shadow-2);
     border-color: var(--vp-c-brand);
-    text-decoration: initial;
     background-color: var(--vp-c-bg-soft-up);
   }
 

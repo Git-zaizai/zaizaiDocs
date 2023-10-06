@@ -5,6 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import { createMediumZoomProvider } from './composables/useMediumZoom'
 
 import './styles/index.scss'
+// import './styles/index.css'
 
 let homePageStyle: HTMLStyleElement | undefined
 

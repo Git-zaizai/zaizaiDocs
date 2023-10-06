@@ -1,4 +1,12 @@
-@import './rainbow.scss';
-@import './vars.scss';
-@import './vitepress.scss';
-@import './medium-zoom.scss';
+@use './rainbow.scss';
+@use './vars.scss';
+@use './vitepress.scss';
+@use './medium-zoom.scss';
+
+.link.active,
+.link.active span,
+.VPNavBarMenuLink:hover span,
+.VPSidebarItem.is-active .link,
+.VPSidebar .link:hover {
+    color: var(--vp-c-brand-1)
+}

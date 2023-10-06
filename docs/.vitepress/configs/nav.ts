@@ -4,74 +4,107 @@ export const nav: DefaultTheme.Config['nav'] = [
   { text: '导航->', link: '/nav/' },
   {
     text: '杂七杂八的笔记',
-    link: '/nav/'
+    link: '/zazabi/'
   },
   {
     text: '前端物语', items: [
       {
         text: 'HTML',
-        link: '/nav/'
+        link: '/HTML/'
       },
       {
         text: 'CSS',
-        link: '/nav/'
+        items: [
+          { text: 'CSS', link: '/CSS/' },
+          { text: 'SCSS', link: '/CSS/SCSS' }
+        ]
       },
       {
         text: 'JavaScript',
-        link: '/nav/'
-      },
-      {
-        text: 'ES6',
-        link: '/nav/'
+        link: '/JavaScript/'
       },
       {
         text: 'AJAX',
-        link: '/nav/'
+        link: '/JavaScript/AJAX'
       },
       {
         text: 'jQuery',
-        link: '/nav/'
-      },
-      {
-        text: 'Scss',
-        link: '/nav/'
+        link: '/JavaScript/jQuery'
       },
       {
         text: 'TypeScript',
-        link: '/nav/'
+        link: '/TypeScript/'
       },
       {
         text: 'Webpack',
-        link: '/nav/'
+        link: '/Webpack/'
       },
       {
-        text: 'npm/yran/pnpm',
-        link: '/nav/'
-      },
+        text: 'Vite',
+        link: '/Vite/'
+      }
     ]
   },
   {
-    text: '框架', items: [
+    text: '框架物语', items: [
       {
         text: 'Vue',
-        link: '/nav/'
+        items: [
+          {
+            text: 'Vue3',
+            link: '/Vue/Vue3.md'
+          },
+          {
+            text: 'Vue2',
+            link: '/Vue/Vue2.md'
+          },
+          {
+            text: 'Vue Router',
+            link: '/Vue/vuerouter4'
+          },
+          {
+            text: 'Vuex',
+            link: '/Vue/Vuex'
+          },
+          {
+            text: 'Pinia',
+            link: '/Vue/Pinia'
+          },
+        ]
       },
       {
         text: 'React',
-        link: '/nav/'
+        items: [
+          {
+            text: 'React',
+            link: '/React/'
+          },
+          {
+            text: 'react Router',
+            link: '/React/reactRouter'
+          },
+          {
+            text: 'Redux',
+            link: '/React/Redux'
+          },
+        ]
       },
       {
         text: 'UniApp',
-        link: '/nav/'
+        link: '/UniApp/'
       },
     ]
   },
   {
-    text: '工具库',
+    text: '工具物语',
     items: [
       {
-        text: 'Pinia',
-        link: '/nav/'
+        text: 'lodash',
+        link: '/Tools/lodash'
+      },
+      {
+        text: 'axios',
+        link: '/Tools/axios'
       },
     ]
   },
@@ -79,23 +112,54 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: '后端', items: [
       {
         text: 'Node.js',
-        link: '/nav/'
+        link: '/Backend/'
       },
       {
-        text: 'Mongodb',
-        link: '/nav/'
+        text: 'Node生态',
+        items: [
+          {
+            text: 'Koa',
+            link: '/Backend/Koa'
+          },
+          {
+            text: 'express',
+            link: '/Backend/express'
+          }
+        ]
       },
       {
-        text: 'MySQL',
-        link: '/nav/'
+        text: '数据库',
+        items: [
+          {
+            text: 'Mongodb',
+            link: '/Backend/Mongodb'
+          },
+          {
+            text: 'MySQL',
+            link: '/Backend/MySQL'
+          }
+        ]
       },
+
     ]
   },
   {
-    text: '杂七杂八的知识', items: [
+    text: '杂七杂八的知识或工具', items: [
       {
         text: 'Git',
-        link: '/nav/'
+        link: '/Git/'
+      },
+      {
+        text: 'npm/yran/pnpm',
+        link: '/npm/'
+      },
+      {
+        text: 'Puppeteer',
+        link: '/Puppeteer/'
+      },
+      {
+        text: 'vitepress',
+        link: '/vitepress/'
       }
     ]
   }

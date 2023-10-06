@@ -6,11 +6,18 @@ import { head, nav, sidebar } from './configs'
 export default defineConfig({
   head,
 
+  title: "崽崽哟 | (っ´Ι`)っ",
+  description: '崽崽的成长之路，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
+
+  lastUpdated: true,
+  cleanUrls: true,
+  lang: 'zh-CN',
+  appearance: 'dark',
   outDir: '../dist',
   base: process.env.APP_BASE_PATH || '/',
-  title: "崽崽哟 | (っ´Ι`)っ",
-  // titleTemplate: '崽崽的趣玩系列',
-  description: '崽崽的成长之路，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     nav,
     sidebar,
