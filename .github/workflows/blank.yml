@@ -1,4 +1,4 @@
-name: GitHub Actions Build and Deploy 1.5
+name: GitHub Actions Build and Deploy 2.0
 
 # 触发条件
 on:

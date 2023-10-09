@@ -9,12 +9,14 @@ export default defineConfig({
   title: "崽崽哟 | (っ´Ι`)っ",
   description: '崽崽的成长之路，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
 
+  // 打包时记得修改
+  base: '/zaizaiDocs/',
+
   lastUpdated: true,
   cleanUrls: true,
   lang: 'zh-CN',
   appearance: 'dark',
   outDir: '../dist',
-  base: process.env.APP_BASE_PATH || '/',
   markdown: {
     lineNumbers: true
   },
