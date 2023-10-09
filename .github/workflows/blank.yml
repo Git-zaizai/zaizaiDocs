@@ -1,4 +1,4 @@
-name: GitHub Actions Build and Deploy 1.0
+name: GitHub Actions Build and Deploy 1.4
 
 # 触发条件
 on:
@@ -55,4 +55,4 @@ jobs:
           # GitHub Pages 读取的分支
           BRANCH: gh-pages
           # 静态文件所在目录
-          FOLDER: dist
+          FOLDER: dist/
