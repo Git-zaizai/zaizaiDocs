@@ -113,7 +113,7 @@ AJAX全称为Asynchronous JavaScript And XML，就是异步的Js和XML。通过A
 ```
 ### ① POST 添加请求体
 **send() 中**可设置【任意类型】【任意数据】只要后端能处理
-```html
+```js
  // 类型1
 xhr.send('a=100&b=200&c=300');
 
@@ -216,6 +216,7 @@ xhr.ontimeout = () => {
     </script>
 ```
 # 八、jQuery 发送请求
+
 ## 1、jQuery——GET 请求
 ```javascript
 <script>
