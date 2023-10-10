@@ -104,21 +104,15 @@
 
   两边都是 true才返回 true，否则返回 false
 
-  
-  ​                <img src="images\图片5.png" alt="">
-  
-  ​                <img src="images\图片6.png" alt="">
+  ![images](http://110.41.157.104/server/uploads/2023-10-10/c1506fe4e91696909781795.png)
+
   
 
 - 逻辑或 ||
 
   两边都是 true才返回 true，否则返回 false
+  ![images](http://110.41.157.104/server/uploads/2023-10-10/68744125001696909781961.png)
 
-  
-  ​                <img src="images\图片7.png" alt="">
-  
-  ​                <img src="images\图片8.png" alt="">
-  
 
 - 逻辑非 ！
 
@@ -199,14 +193,14 @@ age *= 10; // 相当于 age = age * 10;
 ​	
 
 ​	顺序结构是程序中最简单、最基本的流程控制，它没有特定的语法结构，程序会按照代码的先后顺序，依次执行，程序中大多数的代码都是这样执行的。
-                <img src="images\图片12.png" alt="">
+![images](http://110.41.157.104/server/uploads/2023-10-10/6c440b6a951696909780817.png)
 
 ### 2.3 分支流程控制
 
 - 分支结构
 
   由上到下执行代码的过程中，根据不同的条件，执行不同的路径代码（执行代码多选一的过程），从而得到不同的结果
-                  <img src="images\图片13.png" alt="">
+![images](http://110.41.157.104/server/uploads/2023-10-10/17b2b556f11696909781028.png)
 
 	JS 语言提供了两种分支结构语句：if 语句、switch 语句
 
