@@ -4,23 +4,22 @@ layout: home
 layoutClass: 'm-home-layout'
 
 hero:
-  name: "崽崽的"
-  text: "资料合集"
+  name: '崽崽的'
+  text: '资料合集'
   tagline: 基于 VitePress 的个人前端导航页面模板
   image:
     src: /logo.png
     alt: 崽崽前端
   actions:
     - theme: brand
-      text:  前端物语
-      link: /markdown-examples
+      text: 前端物语
+      link: /notes/
     - theme: alt
       text: 导航->
       link: /nav/
     - theme: alt
       text: 杂七杂八的笔记
       link: /nav/
-      
 
 features:
   - icon: 📖
@@ -71,4 +70,3 @@ features:
   text-align: right;
 }
 </style>
-

@@ -42,10 +42,10 @@ JavaScript（es6 前）中的作用域有两种：
 
   ```js
   if (true) {
-    var num = 123
-    console.log(123) //123
+    var num = 123;
+    console.log(123); //123
   }
-  console.log(123) //123
+  console.log(123); //123
   ```
 
 ## 2 - 变量的作用域
@@ -83,14 +83,14 @@ JavaScript（es6 前）中的作用域有两种：
 
 ```js
 function f1() {
-  var num = 123
+  var num = 123;
   function f2() {
-    console.log(num)
+    console.log(num);
   }
-  f2()
+  f2();
 }
-var num = 456
-f1()
+var num = 456;
+f1();
 ```
 
 ![images](http://110.41.157.104/server/uploads/2023-10-10/28ea0724aa1696910521833.png)
@@ -98,22 +98,22 @@ f1()
     作用域链：采取就近原则的方式来查找变量最终的值。
 
 ```js
-var a = 1
+var a = 1;
 function fn1() {
-  var a = 2
-  var b = '22'
-  fn2()
+  var a = 2;
+  var b = '22';
+  fn2();
   function fn2() {
-    var a = 3
-    fn3()
+    var a = 3;
+    fn3();
     function fn3() {
-      var a = 4
-      console.log(a) //a的值 ?
-      console.log(b) //b的值 ?
+      var a = 4;
+      console.log(a); //a的值 ?
+      console.log(b); //b的值 ?
     }
   }
 }
-fn1()
+fn1();
 ```
 
 ![images](http://110.41.157.104/server/uploads/2023-10-10/2b2214f2231696910521833.png)
@@ -136,8 +136,8 @@ JavaScript 代码是由浏览器中的 JavaScript 解析器来执行的。JavaSc
       变量提升（变量预解析）： 变量的声明会被提升到当前作用域的最上面，变量的赋值不会提升。
 
 ```js
-console.log(num) // 结果是多少？
-var num = 10 // ？
+console.log(num); // 结果是多少？
+var num = 10; // ？
 ```
 
     结果：undefined
@@ -149,9 +149,9 @@ var num = 10 // ？
     函数提升： 函数的声明会被提升到当前作用域的最上面，但是不会调用函数。
 
 ```js
-fn()
+fn();
 function fn() {
-  console.log('打印')
+  console.log('打印');
 }
 ```
 
@@ -164,10 +164,10 @@ function fn() {
     函数表达式创建函数，会执行变量提升，此时接收函数的变量名无法正确的调用：
 
 ```js
-fn()
+fn();
 var fn = function () {
-  console.log('想不到吧')
-}
+  console.log('想不到吧');
+};
 ```
 
 结果：报错提示 ”fn is not a function"
@@ -211,8 +211,8 @@ var obj = {
   name: '张三疯',
   sex: '男',
   age: 128,
-  height: 154
-}
+  height: 154,
+};
 ```
 
 JS 中的对象表达结构更清晰，更强大。
@@ -237,9 +237,9 @@ JS 中的对象表达结构更清晰，更强大。
       age: 18,
       sex: '男',
       sayHi: function () {
-        alert('大家好啊~')
-      }
-    }
+        alert('大家好啊~');
+      },
+    };
     ```
 
     上述代码中 star 即是创建的对象。
@@ -263,8 +263,8 @@ JS 中的对象表达结构更清晰，更强大。
       示例代码如下：
 
       ```js
-      console.log(star.name) // 调用名字属性
-      console.log(star['name']) // 调用名字属性
+      console.log(star.name); // 调用名字属性
+      console.log(star['name']); // 调用名字属性
       ```
 
   - 调用对象的方法
@@ -274,7 +274,7 @@ JS 中的对象表达结构更清晰，更强大。
       示例代码如下：
 
       ```js
-      star.sayHi() // 调用 sayHi 方法,注意，一定不要忘记带后面的括号
+      star.sayHi(); // 调用 sayHi 方法,注意，一定不要忘记带后面的括号
       ```
 
   - 变量、属性、函数、方法总结
@@ -294,7 +294,7 @@ JS 中的对象表达结构更清晰，更强大。
   - 创建空对象
 
     ```js
-    var andy = new Obect()
+    var andy = new Obect();
     ```
 
     通过内置构造函数 Object 创建对象，此时 andy 变量已经保存了创建出来的空对象
@@ -306,12 +306,12 @@ JS 中的对象表达结构更清晰，更强大。
       示例代码如下：
 
     ```js
-    andy.name = 'pink'
-    andy.age = 18
-    andy.sex = '男'
+    andy.name = 'pink';
+    andy.age = 18;
+    andy.sex = '男';
     andy.sayHi = function () {
-      alert('大家好啊~')
-    }
+      alert('大家好啊~');
+    };
     ```
 
     注意：
@@ -330,10 +330,10 @@ JS 中的对象表达结构更清晰，更强大。
 
       ```js
       function 构造函数名(形参1, 形参2, 形参3) {
-        this.属性名1 = 参数1
-        this.属性名2 = 参数2
-        this.属性名3 = 参数3
-        this.方法名 = 函数体
+        this.属性名1 = 参数1;
+        this.属性名2 = 参数2;
+        this.属性名3 = 参数3;
+        this.方法名 = 函数体;
       }
       ```
 
@@ -380,7 +380,7 @@ JS 中的对象表达结构更清晰，更强大。
 
   ```js
   for (var k in obj) {
-    console.log(k) // 这里的 k 是属性名
-    console.log(obj[k]) // 这里的 obj[k] 是属性值
+    console.log(k); // 这里的 k 是属性名
+    console.log(obj[k]); // 这里的 obj[k] 是属性值
   }
   ```

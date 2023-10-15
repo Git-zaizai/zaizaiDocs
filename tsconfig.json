@@ -8,10 +8,13 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "/": ["docs/*"],
+      "/~/*": ["/components/*"]
+    }
   },
-  "include": ["env.d.ts", "**/.vitepress/**/*"],
-  "paths": {
-    "/": "./docs*"
-  }
+  "exclude": ["node_modules", ".vite"],
+  "include": ["env.d.ts", "/components/*.ts", "/components/*.vue"]
 }

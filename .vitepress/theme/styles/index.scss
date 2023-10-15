@@ -8,18 +8,18 @@
 .VPNavBarMenuLink:hover span,
 .VPSidebarItem.is-active .link,
 .VPSidebar .link:hover {
-    color: var(--vp-c-brand-1)
+  color: var(--vp-c-brand-1);
 }
 
 .line-number,
 .line-numbers-wrapper {
-    transition: all linear 0.5s;
+  transition: all linear 0.5s;
 }
 
 .line-numbers-mode:hover .line-number {
-    color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
 }
 
 .line-numbers-mode:hover .line-numbers-wrapper {
-    border-color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
 }

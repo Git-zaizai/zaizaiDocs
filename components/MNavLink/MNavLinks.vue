@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { slugify } from '@mdit-vue/shared'
+import { computed } from 'vue';
+import { slugify } from '@mdit-vue/shared';
 
-import MNavLink from './MNavLink.vue'
-import type { NavLink } from './type'
+import MNavLink from './MNavLink.vue';
+import type { NavLink } from './type';
 
 const props = defineProps<{
-  title: string
-  items: NavLink[]
-}>()
+  title: string;
+  items: NavLink[];
+}>();
 
 const formatTitle = computed(() => {
-  return slugify(props.title)
-})
+  return slugify(props.title);
+});
 </script>
 
 <template>
