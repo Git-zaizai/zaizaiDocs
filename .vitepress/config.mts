@@ -39,7 +39,7 @@ export default () => {
     title: '崽崽哟 | (っ´Ι`)っ',
     description: '崽崽的成长之路，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
 
-    outDir: '../dist', //构建输出目录
+    outDir: 'dist', //构建输出目录
     srcDir: 'docs', //源目录
     cacheDir: '.vite', //缓存文件的目录
 
