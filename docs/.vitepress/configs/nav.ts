@@ -3,7 +3,7 @@ import type { DefaultTheme } from 'vitepress'
 export const nav: DefaultTheme.Config['nav'] = [
   { text: '导航->', link: '/nav/' },
   {
-    text: '杂七杂八的笔记', items:[
+    text: '随笔记', items:[
       {
         text: 'github自动化部署',
         link: '/notes/github自动化部署.md'
@@ -41,11 +41,11 @@ export const nav: DefaultTheme.Config['nav'] = [
       },
       {
         text: 'Webpack',
-        link: '/Webpack/'
+        link: '/Buildtools/Webpack.md'
       },
       {
         text: 'Vite',
-        link: '/Vite/'
+        link: '/Buildtools/Vite.md'
       }
     ]
   },
@@ -113,7 +113,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     ]
   },
   {
-    text: '后端', items: [
+    text: '后端.?node', items: [
       {
         text: 'Node.js',
         link: '/Backend/'
@@ -151,7 +151,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: '杂七杂八的知识或工具', items: [
       {
         text: 'Git',
-        link: '/Git/'
+        link: '/notes/git.md'
       },
       {
         text: 'npm/yran/pnpm',

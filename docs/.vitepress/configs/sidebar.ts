@@ -63,7 +63,28 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/TypeScript/': [
     {
-      items: [{ text: 'TypeScript', link: '/TypeScript/' }]
+      items: [
+        {
+          text: 'TypeScript',
+          items: [
+            { text: '开始', link: '/TypeScript/' },
+            { text: '简介', link: '/TypeScript/简介.md' },
+            { text: '基础', link: '/TypeScript/基础.md' },
+            { text: '进阶', link: '/TypeScript/进阶.md' },
+            { text: '工程', link: '/TypeScript/工程.md' },
+            { text: '可看', link: '/TypeScript/可看.md' }
+          ]
+        },
+        {
+          text: 'TS体操',
+          items: [
+            {
+              text: '综合',
+              link: '/TypeScript/TS体操.md'
+            }
+          ]
+        }
+      ]
     }
   ],
   '/Webpack/': [
@@ -89,7 +110,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
           ]
         },
         { text: 'Vuex', link: 'Vuex' },
-        { text: 'Pinia', link: 'Pinia' }
+        { text: 'Pinia', link: 'Pinia' },
+        { text: 'VueUse', link: 'VueUse' }
       ]
     }
   ],

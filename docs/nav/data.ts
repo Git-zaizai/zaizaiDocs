@@ -7,6 +7,17 @@ type NavData = {
 
 export const NAV_DATA: NavData[] = [
   {
+    title:'大佬的博客',
+    items:[
+      {
+        icon:'https://avatars.githubusercontent.com/u/56463992?v=4',
+        title:'云牧',
+        desc:'指向github，在主页可以看到链接',
+        link:'https://github.com/xixixiaoyu'
+      }
+    ]
+  },
+  {
     title: '常用工具',
     items: [
       {
