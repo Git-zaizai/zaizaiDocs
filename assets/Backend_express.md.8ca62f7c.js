@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.d6ec958f.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Backend/express.md","filePath":"Backend/express.md","lastUpdated":1697450441000}'),s={name:"Backend/express.md"};function r(c,n,o,p,d,_){return t(),a("div")}const f=e(s,[["render",r]]);export{m as __pageData,f as default};
