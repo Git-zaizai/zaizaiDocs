@@ -4,7 +4,7 @@
   "description": "基于 VitePress 打造个人前端导航网站",
   "scripts": {
     "dev": "set NODE_ENV=development && vitepress dev docs --port=7373 --e",
-    "test:preview": "vitepress preview docs --base /zaizaiDocs/",
+    "test:preview": "set NODE_ENV=production && vitepress preview docs --base /zaizaiDocs/",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview",
     "docs:dev": "vitepress dev"

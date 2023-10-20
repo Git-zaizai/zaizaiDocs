@@ -1,16 +1,18 @@
-# github自动化部署
+# GitHub Actions 自动部署
 
+[GitHub Actions](https://github.com/features/actions) 是 GitHub 的持续集成服务
 **参考：** [资料地址](https://zhuanlan.zhihu.com/p/626270948)
 
 首先在项目的根目录创建文件
 
-```vbscript
-.github  目录
-  -workflows 目录
-    -xxx.yml  文件 -- 文件名随意  支持 .yml .yaml 两种格式
-```
+::: tip 目录-文件
 
-然后再文件中写入
+- .github 目录
+  - -workflows 目录 - -xxx.yml 文件 -- 文件名随意 支持 .yml .yaml 两种格式
+
+:::
+
+### 编写 `workflow` 文件
 
 ```yaml
 ACCESS_TOKEN# 流程名称 随意起
@@ -79,42 +81,58 @@ jobs:
 
 ### 配置文件变量的使用
 
-**--如没有使用请略过这一片段--**
+::: tip
+在查资料的过程中发现有些是不配置这个的，如没有使用请略过这一片段
+:::
+
+在 `workflow` 文件中有
 
 ```yaml
- # GitHub 密钥
- ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+${{ secrets.**** }}
 ```
 
-**ACCESS_TOKEN** 这个是需要你再项目中进行配置
+这种就是使用到了变量，所有你需要去配置一下
 
-#### 配置方法
+#### 配置 Secrets 也叫 变量吧
 
-首先，要去github生成需要的token，[前往：生成token](https://github.com/settings/tokens?type=beta)
+以这个 `ACCESS_TOKEN` 来配置，首先，要去 github 生成需要的 token。[前往：生成 token](https://github.com/settings/tokens?type=beta)
+
+> _----------------------------------------------------------------------------------------------------_
+
+登录后操作
+![png](http://110.41.157.104/server/uploads/2023-10-19/3e3bb0b7281697686725831.png)
+
+> _----------------------------------------------------------------------------------------------------_
+
+填写完图上指示
+
+> **注意事项： 生成好的 token 只能看见一次，请保存好 token，忘了只能删除后重新生成**
 
 ![png](http://110.41.157.104/server/uploads/2023-10-10/36b1a699da1696908579241.png)
 
-然后点击生成，**生成好的token只能看见一次，请保存好token，忘了只能删除后重新生成**
+> _----------------------------------------------------------------------------------------------------_
 
-接着去到github项目设置
+接着去到 github 项目设置
 
 ![截图](http://110.41.157.104/server/uploads/2023-10-10/b588d188e21696908655721.png)
 
-![截图](http://110.41.157.104/server/uploads/2023-10-10/121ffe63d51696908699286.png)
+> _----------------------------------------------------------------------------------------------------_
 
-注意 **Name **字段不能随便写，根据你使用变量名填写；**value** 要看你使用的地方来，例如本文件中的 **ACCESS_TOKEN** 字段 就是需要你去生成token，当其他自行需要时可以自定义 value
+注意 **Name **字段不能随便写，根据你使用变量名填写；**value** 要看你使用的地方来，例如本文件中的 **ACCESS_TOKEN** 字段 就是需要你去生成 token，当其他自行需要时可以自定义 value
+
+![截图](http://110.41.157.104/server/uploads/2023-10-10/121ffe63d51696908699286.png)
 
 ## Actions permissions
 
-接着需要开启仓库 **Actions ** 读写权限
+接着需要开启仓库 **Actions** 读写权限
 
 ![截图](http://110.41.157.104/server/uploads/2023-10-10/a482b496a21696908715131.png)
 
-拉到页面最下面
+> _----------------------------------------------------------------------------------------------------_
+
+拉到页面最下面，选择 **Read and write permissions** ，就完成了
 
 ![截图](http://110.41.157.104/server/uploads/2023-10-10/316b12bfe41696908727396.png)
-
-选择 **  Read and write permissions** ，就完成了
 
 ## 正常提交代码...
 
@@ -124,7 +142,7 @@ jobs:
 
 ![png](https://gitcode.net/ajream/myimages/-/raw/master/img/20210913232007_image-20210913232006065.png)
 
-点击正在运行的workflow就可以查看部署情况
+点击正在运行的 workflow 就可以查看部署情况
 
 ![png](https://gitcode.net/ajream/myimages/-/raw/master/img/20210913233832_image-20210913233828678.png)
 
@@ -132,4 +150,4 @@ jobs:
 
 # 结束
 
-	到此，流程结束，不出意外你就可以去打开github pages，然后就可以访问到部署的网站。
+    到此，流程结束，不出意外你就可以去打开github pages，然后就可以访问到部署的网站。

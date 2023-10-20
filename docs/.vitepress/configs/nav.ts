@@ -3,25 +3,24 @@ import type { DefaultTheme } from 'vitepress'
 export const nav: DefaultTheme.Config['nav'] = [
   { text: '导航->', link: '/nav/' },
   {
-    text: '随笔记', items:[
+    text: '随笔记',
+    items: [
       {
-        text: 'github自动化部署',
-        link: '/notes/github自动化部署.md'
-      },
+        text: '油猴',
+        link: '/notes/油猴API文档.md'
+      }
     ]
   },
   {
-    text: '前端物语', items: [
+    text: '前端物语',
+    items: [
       {
         text: 'HTML',
         link: '/HTML/'
       },
       {
         text: 'CSS',
-        items: [
-          { text: 'CSS', link: '/CSS/' },
-          { text: 'SCSS', link: '/CSS/SCSS' }
-        ]
+        link: '/CSS/'
       },
       {
         text: 'JavaScript',
@@ -50,7 +49,8 @@ export const nav: DefaultTheme.Config['nav'] = [
     ]
   },
   {
-    text: '框架物语', items: [
+    text: '框架物语',
+    items: [
       {
         text: 'Vue',
         items: [
@@ -73,7 +73,7 @@ export const nav: DefaultTheme.Config['nav'] = [
           {
             text: 'Pinia',
             link: '/Vue/Pinia'
-          },
+          }
         ]
       },
       {
@@ -90,13 +90,13 @@ export const nav: DefaultTheme.Config['nav'] = [
           {
             text: 'Redux',
             link: '/React/Redux'
-          },
+          }
         ]
       },
       {
         text: 'UniApp',
         link: '/UniApp/'
-      },
+      }
     ]
   },
   {
@@ -109,27 +109,15 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: 'axios',
         link: '/Tools/axios'
-      },
+      }
     ]
   },
   {
-    text: '后端.?node', items: [
+    text: '后端.?node',
+    items: [
       {
         text: 'Node.js',
         link: '/Backend/'
-      },
-      {
-        text: 'Node生态',
-        items: [
-          {
-            text: 'Koa',
-            link: '/Backend/Koa'
-          },
-          {
-            text: 'express',
-            link: '/Backend/express'
-          }
-        ]
       },
       {
         text: '数据库',
@@ -143,15 +131,19 @@ export const nav: DefaultTheme.Config['nav'] = [
             link: '/Backend/MySQL'
           }
         ]
-      },
-
+      }
     ]
   },
   {
-    text: '杂七杂八的知识或工具', items: [
+    text: '杂七杂八的知识或工具',
+    items: [
       {
         text: 'Git',
-        link: '/notes/git.md'
+        link: '/Miscellaneous/git/git.md'
+      },
+      {
+        text: 'github自动化部署',
+        link: '/Miscellaneous/git/github自动化部署.md'
       },
       {
         text: 'npm/yran/pnpm',

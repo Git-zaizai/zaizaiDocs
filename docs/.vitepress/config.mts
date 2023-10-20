@@ -5,8 +5,6 @@ import { heads, nav, sidebar } from './configs'
 // https://vitepress.dev/reference/site-config
 export default () => {
   function getBase(): string {
-    console.log(process.env.NODE_ENV)
-
     if (process.env.NODE_ENV?.includes('development')) {
       return '/'
     }
@@ -26,7 +24,6 @@ export default () => {
         element[1].content = getBase() + element[1].content.replace('/', '')
       }
     }
-    console.log(head)
 
     return head
   }
@@ -44,7 +41,7 @@ export default () => {
     // 当设置为true时，VitePress 不会因死链接而导致构建失败。
     //  当设置为'localhostLinks'时，构建将在死链接上失败，但不会检查localhost链接。
     // ignoreDeadLinks: true,
-    // cleanUrls: true,
+    cleanUrls: true,
     lastUpdated: true,
     lang: 'zh-CN',
     appearance: 'dark',
@@ -59,6 +56,11 @@ export default () => {
 
       logo: '/logo.png',
       i18nRouting: false,
+      /* 右侧大纲配置 */
+      outline: {
+        level: 'deep',
+        label: '本页目录'
+      },
       socialLinks: [
         { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
       ],

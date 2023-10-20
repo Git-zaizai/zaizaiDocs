@@ -20,6 +20,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         {
           text: 'JavaScript基础',
+          collapsed: true,
           items: [
             {
               text: 'JavaScript基础-开篇',
@@ -48,11 +49,36 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
           ]
         },
         {
-          text: 'ES6',
+          text: 'ES6+',
           items: [
             {
               text: 'ES6-11',
               link: '/JavaScript/es6-11'
+            }
+          ]
+        },
+        {
+          text: 'JS知识',
+          items: [
+            {
+              text: '数据类型',
+              link: '/JavaScript/数据类型.md'
+            },
+            {
+              text: '数据类型的拷贝',
+              link: '/JavaScript/数据类型的拷贝.md'
+            },
+            {
+              text: '类型转换',
+              link: '/JavaScript/类型转换.md'
+            },
+            {
+              text: '原型和原型链',
+              link: '/JavaScript/原型和原型链.md'
+            },
+            {
+              text: '继承',
+              link: '/JavaScript/继承.md'
             }
           ]
         }
@@ -87,14 +113,13 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     }
   ],
-  '/Webpack/': [
+  '/Buildtools/': [
     {
-      items: [{ text: 'Webpack', link: '/Webpack/' }]
-    }
-  ],
-  '/Vite/': [
-    {
-      items: [{ text: 'Vite', link: '/Vite/' }]
+      text: '构建工具',
+      items: [
+        { text: 'Webpack', link: '/Buildtools/Webpack.md' },
+        { text: 'Vite', link: '/Buildtools/Vite.md' }
+      ]
     }
   ],
   '/Vue/': [
@@ -150,6 +175,27 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         { text: 'Mongodb', link: '/Backend/Mongodb' },
         { text: 'MySQL', link: '/Backend/MySQL' }
+      ]
+    }
+  ],
+  '/Miscellaneous/git/': [
+    {
+      items: [
+        {
+          text: 'Git系列',
+          items: [
+            { text: 'git 使用', link: '/Miscellaneous/git/git使用.md' },
+            { text: 'git命令合集', link: '/Miscellaneous/git/git命令合集.md' },
+            {
+              text: 'git命令合集-加强版',
+              link: '/Miscellaneous/git/git命令合集-加强版.md'
+            },
+            {
+              text: 'github自动化部署',
+              link: '/Miscellaneous/git/github自动化部署.md'
+            }
+          ]
+        }
       ]
     }
   ]
