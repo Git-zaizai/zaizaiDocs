@@ -14,6 +14,8 @@ const urlLink = ref('');
 // @ts-ignore
 const { NODE_ENV } = import.meta.env;
 
+console.log('ENV', NODE_ENV);
+
 if (NODE_ENV === 'development') {
   urlLink.value = '';
 } else {
@@ -36,10 +38,12 @@ if (NODE_ENV === 'development') {
     transform: translateX(20px);
     opacity: 0;
   }
+
   40% {
     opacity: 0;
     transform: translateX(-100px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0px);
@@ -81,6 +85,7 @@ if (NODE_ENV === 'development') {
     display: flex;
     align-items: center;
     padding: var(--m-nav-box-gap);
+
     &-header {
       display: flex;
       align-items: center;
@@ -110,5 +115,4 @@ if (NODE_ENV === 'development') {
       font-size: 14px;
     }
   }
-}
-</style>
+}</style>
