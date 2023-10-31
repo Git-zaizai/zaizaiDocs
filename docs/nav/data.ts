@@ -625,4 +625,20 @@ export const NAV_DATA: NavData[] = [
       },
     ],
   },
+  {
+    title: '各种网站',
+    items: [
+      {
+        icon: '',
+        title: '虚拟手机号',
+        desc: '有免费的，也有两块钱付费的',
+        link: 'https://sms-activate.org/cn',
+      },
+      {
+        title: 'GPT',
+        desc: '免费的GPT',
+        link: ' https://chat18.aichatos.xyz',
+      },
+    ],
+  },
 ];

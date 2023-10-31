@@ -10,7 +10,7 @@ export type SidebarItem = {
 
 export type SidebarList = SidebarItem[];
 
-export function sideBarDeep(params: Params) {
+export function sideBarDeep(params: Params): SidebarList {
   const clone = structuredClone(params);
 
   function deep(treeArr: any[]): any[] {
@@ -36,12 +36,12 @@ export function sideBarDeep(params: Params) {
     };
   });
 
-  result = linkRrplace(result as SidebarItem[]);
+  result = linkRrplace(result as SidebarList);
 
-  return result;
+  return result as SidebarList;
 }
 
-export function linkRrplace(list: SidebarItem[]): Params {
+export function linkRrplace(list: SidebarList): SidebarList {
   for (const iterator of list) {
     iterator.items.forEach((fv) => {
       if (fv.link) {

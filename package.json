@@ -1,6 +1,7 @@
 {
     "name": "vitepress-nav-template",
     "version": "1.0.0",
+    "module": "module",
     "description": "基于 VitePress 打造个人前端导航网站",
     "scripts": {
         "dev": "set NODE_ENV=development && vitepress dev --port=7373 --e",

@@ -61,7 +61,7 @@ function getRandom(min, max) {
 
 - 使用 Date 实例的方法和属性
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/664c2437a11696915920890.png)
+  (./images/06/图片1.png)
 
 - 通过 Date 实例获取总毫米数
 
@@ -139,7 +139,7 @@ function getRandom(min, max) {
 
 - 数组中有进行增加、删除元素的方法，部分方法如下表
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/664c2437a11696915920890.png)
+  (./images/06/图片2.png)
 
   注意：push、unshift 为增加元素方法；pop、shift 为删除元素的方法
 
@@ -147,7 +147,7 @@ function getRandom(min, max) {
 
 - 数组中有对数组本身排序的方法，部分方法如下表
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/7efa84d4bc1696915920984.png)
+  ![](./images/06/图片3.png)
 
   注意：sort 方法需要传入参数来设置升序、降序排序
 
@@ -158,13 +158,13 @@ function getRandom(min, max) {
 
 - 数组中有获取数组指定元素索引值的方法，部分方法如下表
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/eec4ac9f061696915920994.png)
+  ![](./images/06/图片4.png)
 
 #### 数组转换为字符串
 
 - 数组中有把数组转化为字符串的方法，部分方法如下表
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/50aaa93a9e1696915920994.png)
+  (./images/06/图片5.png)
 
   注意：join 方法如果不传入参数，则按照 “ , ”拼接元素
 
@@ -172,7 +172,7 @@ function getRandom(min, max) {
 
 - 数组中还有其他操作方法，同学们可以在课下自行查阅学习
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/82833e98a01696915920628.png)
+	(./images/06/图片6.png)
 
 ### 1.6 字符串对象
 
@@ -212,7 +212,7 @@ temp = null;
 
 ​ 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是返回指定字符的位置的方法：
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/07d345cdda1696915920618.png)
+(./images/06/图片7.png)
 
 ​ 案例：查找字符串"abcoefoxyozzopp"中所有 o 出现的位置以及次数
 
@@ -224,11 +224,11 @@ temp = null;
 
 ​ 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是根据位置返回指定位置上的字符：
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/343053e7301696915920629.png)
+(./images/06/图片8.png)
 
 ​ 在上述方法中，charCodeAt 方法返回的是指定位置上字符对应的 ASCII 码，ASCII 码对照表如下：
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/54aa252be21696915920667.png)
+(./images/06/图片9.png)
 
 ​ 案例：判断一个字符串 'abcoefoxyozzopp' 中出现次数最多的字符，并统计其次数
 
@@ -244,7 +244,7 @@ temp = null;
 
 ​ 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是部分操作方法：
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/00e23bf7a51696915920785.png)
+(./images/06/图片10.png)
 
 #### replace()方法
 
@@ -284,19 +284,19 @@ temp = null;
 
 2、堆（操作系统）：存储复杂类型(对象)，一般由程序员分配释放，若程序员不释放，由垃圾回收机制回收。
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/40865df7531696915920768.png)
+(./images/06/图片11.png)
 
 - 简单数据类型的存储方式
 
   ​ 值类型变量的数据直接存放在变量（栈空间）中
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/994fbdba3b1696915920765.png)
+(./images/06/图片12.png)
 
 - 复杂数据类型的存储方式
 
   ​ 引用类型变量（栈空间）里存放的是地址，真正的对象实例存放在堆空间中
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/1248b4fd4c1696915920781.png)
+  (./images/06/图片13.png)
 
 ### 2.4 简单类型传参
 
@@ -314,7 +314,7 @@ console.log(x)；
 
 ​ 运行结果如下：
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/53900419521696915920874.png)
+(./images/06/图片14.png)
 
 ### 2.5 复杂数据类型传参
 
@@ -337,4 +337,4 @@ console.log(p.name);    // 4. 这个输出什么 ?
 
 ​ 运行结果如下：
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/020c3c3da91696915920873.png)
+![](./images/06/图片15.png)

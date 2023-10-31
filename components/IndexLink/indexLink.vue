@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 defineOptions({
   name: 'IndexLink',
 });
@@ -8,10 +9,21 @@ const props = defineProps<{
   link: string;
   isTe?: boolean;
 }>();
+
+const urlLink = ref('');
+// @ts-ignore
+const { NODE_ENV } = import.meta.env;
+console.log(NODE_ENV);
+
+if (!NODE_ENV || NODE_ENV === 'development') {
+  urlLink.value = '';
+} else {
+  urlLink.value = '/zaizaiDocs';
+}
 </script>
 
 <template>
-  <a v-if="link" class="m-nav-link" :href="link" rel="noreferrer">
+  <a v-if="link" class="m-nav-link" :href="urlLink + link" rel="noreferrer">
     <article class="box">
       <span v-if="text" class="title">{{ text }}</span>
       <span class="icon-huo-jian">🚀</span>

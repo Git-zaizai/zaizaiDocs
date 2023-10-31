@@ -17,12 +17,13 @@
 
 - 实际上计算机最终所执行的都是 机器语言，它是由“0”和“1”组成的二进制数，二进制是计算机语言的基础。
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/95b4f880331696909317219.png)
+  ![./images](././images/01/图片1.png)
 
 ### 1.3 编程语言
 
 ```html
-编程语言： 可以通过类似于人类语言的“语言”来控制计算机，让计算机为我们做事情，这样的语言就叫做编程语言（Programming
+编程语言：
+可以通过类似于人类语言的“语言”来控制计算机，让计算机为我们做事情，这样的语言就叫做编程语言（Programming
 Language）。编程语言是用来控制计算机的一系列指令，它有固定的格式和词汇（不同编程语言的格式和词汇不一样），必须遵守。如今通用的编程语言有两种形式：汇编语言和高级语言。
 ```
 
@@ -31,13 +32,14 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
 | **汇编语言** |                                      汇编语言和机器语言实质是相同的，都是直接对硬件操作，只不过指令采用了英文缩写的标识符，容易识别和记忆。                                       |
 | **高级语言** | 高级语言主要是相对于低级语言而言，它并不是特指某一种具体的语言，而是包括了很多编程语言，常用的有 C 语言、C++、Java、C#、Python、PHP、JavaScript、Go 语言、Objective-C、Swift 等。 |
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/dc8b2538341696909317220.png)
+![png](././images/01/图片2.png)
 
 ### 1.4 翻译器
 
     	高级语言所编制的程序不能直接被计算机识别，必须经过转换才能被执行，为此，我们需要一个翻译器。翻译器可以将我们所编写的源代码转换为机器语言，这也被称为二进制化。
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/a09e5099521696909317203.png)
+![png](././images/01/图片3.png)
+
 
 ### 1.5 编程语言和标记语言区别
 
@@ -58,9 +60,9 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
 
 ### 2.1 计算机组成
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/d8239ddb141696909317233.png)
+![](./images/01/图片4.png)
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/5a9770b1081696909317441.png)
+![](./images/01/图片5.png)
 
 ### 2.2 数据存储
 
@@ -84,7 +86,7 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
 
 ### 2.4 程序运行
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/63ad4382181696909317389.png)
+![](./images/01/图片6.png)
 
     计算机运行软件的过程：
     1. 打开某个程序时，先从硬盘中把程序的代码加载到内存中
@@ -96,13 +98,13 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
 
 ### 3.1 JavaScript 是什么
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/ad0fd0225f1696909317424.png)
+![](./images/01/图片7.png)
 
 - JavaScript 是世界上最流行的语言之一，是一种运行在客户端的脚本语言 （Script 是脚本的意思）
 - 脚本语言：不需要编译，运行过程中由 js 解释器( js 引擎）逐行来进行解释并执行
 - 现在也可以基于 Node.js 技术进行服务器端编程
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/ed3cd8eb431696909317400.png)
+	![](./images/01/图片8.png)
 
 ### 3.2 JavaScript 的作用
 
@@ -116,23 +118,23 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
 
 ### 3.3 HTML/CSS/JS 的关系
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/7454306c5f1696909317560.png)
+![](./images/01/图片9.png)
 
 ### 3.4 浏览器执行 JS 简介
 
 **浏览器分成两部分：渲染引擎和 JS 引擎**
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/4794fe26c41696909317959.png)
+![](./images/01/neihe.png)
 
     	浏览器本身并不会执行JS代码，而是通过内置 JavaScript 引擎(解释器) 来执行 JS 代码 。
     JS 引擎执行代码时逐行解释每一句源码（转换为机器语言），然后由计算机去执行，
     所以 JavaScript 语言归为脚本语言，会逐行解释执行。
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/c49d5e82b11696909317533.png)
+![](./images/01/图片10.png)
 
 ### 3.5 JS 的组成
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/325797a0e11696909317543.png)
+![](./images/01/图片11.png)
 
 1.  #### **ECMAScript**
 
@@ -141,7 +143,7 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
     这种语言在万维网上应用广泛，它往往被称为 JavaScript 或 JScript，
     但实际上后两者是 ECMAScript 语言的实现和扩展。
 
-    ![images](http://110.41.157.104/server/uploads/2023-10-10/d35770e41e1696909317542.png)
+    ![](./images/01/图片12.png)
 
     ​ ECMAScript：规定了 JS 的编程语法和基础核心知识，是所有浏览器厂商共同遵守的一套 JS 语法工业标准。
 
@@ -164,7 +166,11 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
 1.  行内式
 
 ```html
-<input type="button" value="点我试试" onclick="alert('Hello World')" />
+<input
+  type="button"
+  value="点我试试"
+  onclick="alert('Hello World')"
+/>
 ```
 
 - 可以将单行或少量 JS 代码写在 HTML 标签的事件属性中（以 on 开头的属性），如：onclick
@@ -177,7 +183,7 @@ Language）。编程语言是用来控制计算机的一系列指令，它有固
 
    ```html
    <script>
-     alert('Hello  World~!');
+     alert('Hello  World~!')
    </script>
    ```
 
@@ -248,14 +254,14 @@ vscode → 首选项按钮 → 键盘快捷方式 → 查找 原来的快捷键 
 白话：变量就是一个装东西的盒子。
 
 通俗：变量是用于存放数据的容器。 我们通过 变量名 获取数据，甚至数据可以修改。
-![images](http://110.41.157.104/server/uploads/2023-10-10/98776c9e2b1696909317675.png)
+![](./images/01/图片13.png)
 
 ### 6.2 变量在内存中的存储
 
     	本质：变量是程序在内存中申请的一块用来存放数据的空间。
     类似我们酒店的房间，一个房间就可以看做是一个变量。
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/b31b5b02401696909317676.png)
+![](./images/01/图片14.png)
 
 ## 7 - 变量的使用
 
@@ -266,7 +272,7 @@ vscode → 首选项按钮 → 键盘快捷方式 → 查找 原来的快捷键 
 
 ```javascript
 //  声明变量
-var age; //  声明一个 名称为age 的变量
+var age //  声明一个 名称为age 的变量
 ```
 
 - var 是一个 JS 关键字，用来声明变量( variable 变量的意思 )。
@@ -277,7 +283,7 @@ var age; //  声明一个 名称为age 的变量
 ### 7.2 赋值
 
 ```javascript
-age = 10; // 给 age  这个变量赋值为 10
+age = 10 // 给 age  这个变量赋值为 10
 ```
 
 - = 用来把右边的值赋给左边的变量空间中 此处代表赋值的意思
@@ -286,7 +292,7 @@ age = 10; // 给 age  这个变量赋值为 10
 ### 7.3 变量的初始化
 
 ```js
-var age = 18; // 声明变量同时赋值为 18
+var age = 18 // 声明变量同时赋值为 18
 // 声明一个变量并赋值， 我们称之为变量的初始化。
 ```
 
@@ -297,9 +303,9 @@ var age = 18; // 声明变量同时赋值为 18
   ​ 一个变量被重新复赋值后，它原有的值就会被覆盖，变量值将以最后一次赋的值为准。
 
   ```js
-  var age = 18;
+  var age = 18
 
-  age = 81; // 最后的结果就是81因为18 被覆盖掉了
+  age = 81 // 最后的结果就是81因为18 被覆盖掉了
   ```
 
 - 同时声明多个变量
@@ -309,7 +315,7 @@ var age = 18; // 声明变量同时赋值为 18
   ```js
   var age = 10,
     name = 'zs',
-    sex = 2;
+    sex = 2
   ```
 
 - 声明变量特殊情况
@@ -329,7 +335,7 @@ var age = 18; // 声明变量同时赋值为 18
 - 不能 以数字开头。 18age 是错误的
 - 不能 是关键字、保留字。例如：var、for、while
 - 变量名必须有意义。 MMD BBD nl → age
-- 遵守驼峰命名法。首字母小写，后面单词的首字母需要大写。myFirstName![images](http://110.41.157.104/server/uploads/2023-10-10/ad703950e11696909317691.png)
+- 遵守驼峰命名法。首字母小写，后面单词的首字母需要大写。myFirstName![](./images/01/图片15.png)
 
 推荐翻译网站： 有道 爱词霸
 
@@ -349,15 +355,15 @@ var age = 18; // 声明变量同时赋值为 18
       ​		变量是用来存储值的所在处，它们有名字和数据类型。变量的数据类型决定了如何将代表这些值的位存储到计算机的内存中。JavaScript 是一种弱类型或者说动态语言。这意味着不用提前声明变量的类型，在程序运行过程中，类型会被自动确定：
 
   ```js
-  var age = 10; // 这是一个数字型
-  var areYouOk = '是的'; // 这是一个字符串
+  var age = 10 // 这是一个数字型
+  var areYouOk = '是的' // 这是一个字符串
   ```
 
   ​ 在代码运行时，变量的数据类型是由 JS 引擎 根据 = 右边变量值的数据类型来判断 的，运行完毕之后， 变量就确定了数据类型。JavaScript 拥有动态类型，同时也意味着相同的变量可用作不同的类型：
 
 ```js
-var x = 6; // x 为数字
-var x = 'Bill'; // x 为字符串
+var x = 6 // x 为数字
+var x = 'Bill' // x 为字符串
 ```
 
 - 数据类型的分类
@@ -374,15 +380,15 @@ var x = 'Bill'; // x 为字符串
 
 JavaScript 中的简单数据类型及其说明如下：
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/97364ba9ea1696909317703.png)
+  ![](./images/01/图片16.png)
 
 - 数字型 Number
 
   ​ JavaScript 数字类型既可以保存整数，也可以保存小数(浮点数）。
 
   ```js
-  var age = 21; // 整数
-  var Age = 21.3747; // 小数
+  var age = 21 // 整数
+  var Age = 21.3747 // 小数
   ```
 
   1. 数字型进制
@@ -391,11 +397,11 @@ JavaScript 中的简单数据类型及其说明如下：
 
      ```js
      // 1.八进制数字序列范围：0~7
-     var num1 = 07; // 对应十进制的7
-     var num2 = 019; // 对应十进制的19
-     var num3 = 08; // 对应十进制的8
+     var num1 = 07 // 对应十进制的7
+     var num2 = 019 // 对应十进制的19
+     var num3 = 08 // 对应十进制的8
      // 2.十六进制数字序列范围：0~9以及A~F
-     var num = 0xa;
+     var num = 0xa
      ```
 
      现阶段我们只需要记住，在 JS 中八进制前面加 0，十六进制前面加 0x
@@ -418,14 +424,14 @@ JavaScript 中的简单数据类型及其说明如下：
 
    用来判断一个变量是否为非数字的类型，返回 true 或者 false
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/992db95d4f1696909317809.png)
+![](./images/01/图片17.png)
 
 ```js
-var usrAge = 21;
-var isOk = isNaN(userAge);
-console.log(isNum); // false ，21 不是一个非数字
-var usrName = 'andy';
-console.log(isNaN(userName)); // true ，"andy"是一个非数字
+var usrAge = 21
+var isOk = isNaN(userAge)
+console.log(isNum) // false ，21 不是一个非数字
+var usrName = 'andy'
+console.log(isNaN(userName)) // true ，"andy"是一个非数字
 ```
 
 - 字符串型 String
@@ -433,10 +439,10 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
   ​ 字符串型可以是引号中的任意文本，其语法为 双引号 "" 和 单引号''
 
   ```js
-  var strMsg = '我爱北京天安门~'; // 使用双引号表示字符串
-  var strMsg2 = '我爱吃猪蹄~'; // 使用单引号表示字符串
+  var strMsg = '我爱北京天安门~' // 使用双引号表示字符串
+  var strMsg2 = '我爱吃猪蹄~' // 使用单引号表示字符串
   // 常见错误
-  var strMsg3 = 我爱大肘子; // 报错，没使用引号，会被认为是js代码，但js没有这些语法
+  var strMsg3 = 我爱大肘子 // 报错，没使用引号，会被认为是js代码，但js没有这些语法
   ```
 
   ​ 因为 HTML 标签里面的属性使用的是双引号，JS 这里我们更推荐使用单引号。
@@ -472,8 +478,8 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
           ​		字符串是由若干字符组成的，这些字符的数量就是字符串的长度。通过字符串的 length 属性可以获取整个字符串的长度。
 
       ```js
-      var strMsg = '我是帅气多金的程序猿！';
-      alert(strMsg.length); // 显示 11
+      var strMsg = '我是帅气多金的程序猿！'
+      alert(strMsg.length) // 显示 11
       ```
 
   4.  字符串拼接
@@ -484,11 +490,11 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
 
         ```js
         //1.1 字符串 "相加"
-        alert('hello' + ' ' + 'world'); // hello world
+        alert('hello' + ' ' + 'world') // hello world
         //1.2 数值字符串 "相加"
-        alert('100' + '100'); // 100100
+        alert('100' + '100') // 100100
         //1.3 数值字符串 + 数值
-        alert('11' + 12); // 1112
+        alert('11' + 12) // 1112
         ```
 
         - **_+ 号总结口诀：数值相加 ，字符相连_**
@@ -496,11 +502,11 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
   5.  字符串拼接加强
 
       ```js
-      console.log('pink老师' + 18); // 只要有字符就会相连
-      var age = 18;
-      console.log('pink老师age岁啦'); // 这样不行哦
-      console.log('pink老师' + age); // pink老师18
-      console.log('pink老师' + age + '岁啦'); // pink老师18岁啦
+      console.log('pink老师' + 18) // 只要有字符就会相连
+      var age = 18
+      console.log('pink老师age岁啦') // 这样不行哦
+      console.log('pink老师' + age) // pink老师18
+      console.log('pink老师' + age + '岁啦') // pink老师18岁啦
       ```
 
       - 经常会将字符串和变量来拼接，变量可以很方便地修改里面的值
@@ -514,8 +520,8 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
   ​ 布尔型和数字型相加的时候， true 的值为 1 ，false 的值为 0。
 
   ```js
-  console.log(true + 1); // 2
-  console.log(false + 1); // 1
+  console.log(true + 1) // 2
+  console.log(false + 1) // 1
   ```
 
 - Undefined 和 Null
@@ -523,20 +529,20 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
   ​ 一个声明后没有被赋值的变量会有一个默认值 undefined ( 如果进行相连或者相加时，注意结果）
 
   ```js
-  var variable;
-  console.log(variable); // undefined
-  console.log('你好' + variable); // 你好undefined
-  console.log(11 + variable); // NaN
-  console.log(true + variable); //  NaN
+  var variable
+  console.log(variable) // undefined
+  console.log('你好' + variable) // 你好undefined
+  console.log(11 + variable) // NaN
+  console.log(true + variable) //  NaN
   ```
 
   ​ 一个声明变量给 null 值，里面存的值为空（学习对象时，我们继续研究 null)
 
   ```js
-  var vari = null;
-  console.log('你好' + vari); // 你好null
-  console.log(11 + vari); // 11
-  console.log(true + vari); //  1
+  var vari = null
+  console.log('你好' + vari) // 你好null
+  console.log(11 + vari) // 11
+  console.log(true + vari) //  1
   ```
 
 ### 8.3 获取变量数据类型
@@ -546,13 +552,13 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
   ​ typeof 可用来获取检测变量的数据类型
 
   ```js
-  var num = 18;
-  console.log(typeof num); // 结果 number
+  var num = 18
+  console.log(typeof num) // 结果 number
   ```
 
   ​ 不同类型的返回值
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/44805a05c81696909317810.png)
+  ![](./images/01/图片18.png)
 
 - 字面量
 
@@ -577,34 +583,34 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
 
 - 转换为字符串
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/6cf8d641be1696909317817.png)
+  ![](./images/01/图片19.png)
 
   - toString() 和 String() 使用方式不一样。
   - 三种转换方式，更多第三种加号拼接字符串转换方式， 这一种方式也称之为隐式转换。
 
 - 转换为数字型（重点）
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/d6163991731696909317830.png)
+  ![](./images/01/图片20.png)
 
   - 注意 parseInt 和 parseFloat 单词的大小写，这 2 个是重点
   - 隐式转换是我们在进行算数运算的时候，JS 自动转换了数据类型
 
 - 转换为布尔型
 
-  ![images](http://110.41.157.104/server/uploads/2023-10-10/64546c820b1696909317946.png)
+  ![](./images/01/图片21.png)
 
   - 代表空、否定的值会被转换为 false ，如 ''、0、NaN、null、undefined
 
   - 其余值都会被转换为 true
 
     ```js
-    console.log(Boolean('')); // false
-    console.log(Boolean(0)); // false
-    console.log(Boolean(NaN)); // false
-    console.log(Boolean(null)); // false
-    console.log(Boolean(undefined)); // false
-    console.log(Boolean('小白')); // true
-    console.log(Boolean(12)); // true
+    console.log(Boolean('')) // false
+    console.log(Boolean(0)) // false
+    console.log(Boolean(NaN)) // false
+    console.log(Boolean(null)) // false
+    console.log(Boolean(undefined)) // false
+    console.log(Boolean('小白')) // true
+    console.log(Boolean(12)) // true
     ```
 
 ## 9 - 解释型语言和编译型语言
@@ -616,7 +622,7 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
 所以必须要把程序员所写的程序语言翻译成机器语言才能执行程序。
 程序语言翻译成机器语言的工具，被称为翻译器。
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/c21b2f99a31696909317945.png)
+![](./images/01/图片22.png)
 
 - 翻译器翻译的方式有两种：一个是编译，另外一个是解释。两种方式之间的区别在于翻译的时间点不同
 - 编译器是在代码执行之前进行编译，生成中间代码文件
@@ -624,7 +630,7 @@ console.log(isNaN(userName)); // true ，"andy"是一个非数字
 
 ### 9.2 执行过程
 
-![images](http://110.41.157.104/server/uploads/2023-10-10/a9fa86d0491696909317958.png)
+![](./images/01/图片23.png)
 
     类似于请客吃饭：
 

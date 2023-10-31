@@ -52,7 +52,7 @@
 
 低分率的脚本会在脚本管理列表上显示，链接地址可以为 `http://` 或者 `https://`
 
-![png](http://110.41.157.104/server/uploads/2023-10-17/c6f4716a6a1697534892687.png)
+![png](https://img-blog.csdnimg.cn/20210628134915155.png)
 
 ## `@icon64`、`@icon64URL`
 
@@ -521,4 +521,4 @@ Greasy Fork发布脚本注意事项
 1.不能使用脚本默认描述
 2.在Greasy Fork发布的脚本只能在Greasy Fork上更新
 
-![png](http://110.41.157.104/server/uploads/2023-10-17/6b25d50f1e1697537270007.png)
+![png](https://img-blog.csdnimg.cn/202107091144305.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dvb2RfZ29vZF94aXU=,size_16,color_FFFFFF,t_70)

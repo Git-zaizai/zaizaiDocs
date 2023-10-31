@@ -123,8 +123,6 @@ router.push({
 </script>
 ```
 
-![image](http://110.41.157.104/server/uploads/2023-10-21/4cd04119911697875425388.png)
-
 ### `useRoute()`
 
 显而易见 `this.$route` 转换到 vue3 就是 `useRoute()` 获取当前的路由对象
@@ -143,8 +141,6 @@ watch(
 );
 </script>
 ```
-
-![image](http://110.41.157.104/server/uploads/2023-10-21/314862bfcd1697875705941.png)
 
 ### 其他 `hook` 函数
 

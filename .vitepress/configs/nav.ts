@@ -48,7 +48,7 @@ export const nav: DefaultTheme.Config['nav'] = [
       },
       {
         text: 'uni-app',
-        link: '/uni-app/',
+        link: '/uni-app/index',
       },
       {
         text: 'Webpack',

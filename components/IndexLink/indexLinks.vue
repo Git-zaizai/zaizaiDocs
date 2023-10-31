@@ -3,7 +3,7 @@ import { computed, defineOptions } from 'vue';
 import { slugify } from '@mdit-vue/shared';
 import type { DefaultTheme } from 'vitepress';
 import IndexLink from './indexLink.vue';
-import { sideBarDeep } from '../utlis.ts';
+import { sideBarDeep } from '../utlis';
 
 defineOptions({
   name: 'IndexLinks',
