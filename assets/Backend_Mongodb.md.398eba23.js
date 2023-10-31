@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.7518ccd6.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Backend/Mongodb.md","filePath":"Backend/Mongodb.md","lastUpdated":1698757196000}'),o={name:"Backend/Mongodb.md"};function n(d,c,r,s,p,_){return t(),a("div")}const f=e(o,[["render",n]]);export{m as __pageData,f as default};
