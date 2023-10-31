@@ -9,6 +9,7 @@ export default () => {
   const pathAlias = (path: string) => resolve(join(__dirname, path).replace(/\\/g, '/'));
 
   function getBase(): string {
+    return '/'
     if (process.env.NODE_ENV?.includes('development')) {
       return '/';
     }
