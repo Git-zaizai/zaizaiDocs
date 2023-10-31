@@ -20,5 +20,8 @@
         "sass": "^1.68.0",
         "vitepress": "1.0.0-rc.20",
         "vue": "^3.3.4"
+    },
+    "dependencies": {
+        "fast-clone": "^1.5.13"
     }
 }

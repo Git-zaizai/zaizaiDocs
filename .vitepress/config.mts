@@ -1,8 +1,7 @@
+import clone from 'fast-clone'
 import { defineConfig } from 'vitepress';
 import type { HeadConfig } from 'vitepress';
-
 import { resolve, join } from 'node:path';
-
 import { heads, nav, sidebar } from './configs';
 
 // https://vitepress.dev/reference/site-config

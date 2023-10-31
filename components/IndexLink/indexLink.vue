@@ -13,9 +13,8 @@ const props = defineProps<{
 const urlLink = ref('');
 // @ts-ignore
 const { NODE_ENV } = import.meta.env;
-console.log(NODE_ENV);
 
-if (!NODE_ENV || NODE_ENV === 'development') {
+if (NODE_ENV === 'development') {
   urlLink.value = '';
 } else {
   urlLink.value = '/zaizaiDocs';
