@@ -19,7 +19,7 @@ export default ({ mode }) => {
   }
   if (mode === 'production') {
     if (viteEnv.VITE_REFERE) {
-      base = viteEnv.VITE_REFERE
+      base = '/'
     } else {
       base = viteEnv.VITE_GITHUB_PAGES_BASE
     }
