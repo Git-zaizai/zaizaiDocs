@@ -112,7 +112,7 @@ export const nav: DefaultTheme.Config['nav'] = [
       },
       {
         text: 'Puppeteer',
-        link: '/Puppeteer/',
+        link: '/Miscellaneous/Puppeteer',
       },
       {
         text: 'VitePress',

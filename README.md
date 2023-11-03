@@ -29,7 +29,9 @@
 |           |-- vars.scss
 |           `-- vitepress.scss
 |-- components // 各种组件
-|-- dist 
+|-- dist
+|-- docs // 编写文档的目录
+|-- vitePlugin // 自定义vite插件
 |-- env.d.ts
 |-- package.json
 |-- pnpm-lock.yaml
@@ -42,10 +44,72 @@
 
 > 在 vitepress中 `@` 与 `#` 被内置使用，所以还是不要用了
 
-alias: `/~/` -> `components`
+alias: `/~/` -> `/components`
+
+## 环境.env说明
+
+环境模式自定义了一下，不分开 `.env.xxx` 文件，只需要 `.env` 一个文件
+
+``` ts
+# 开发时
+# 开发 base 路径
+VITE_BASE = / 
+# 端口
+VITE_PORT = 7373
+
+# 生产环境的配置
+# github pages 路径
+VITE_GITHUB_PAGES_BASE = /zaizaiDocs/
+# 有域名填上
+VITE_REFERE = docs.xiaoheizi.one
+```
+### `VITE_GITHUB_PAGES_BASE`
+`VITE_GITHUB_PAGES_BASE` 是用于 `github pages` 部署时填入的项目名称，一般情况下 `github pages` 部署的路径为 
+
+`用户名.github.io/项目名字`
+
+需要设置项目的根路径，不然 `404` 了
+
+### VITE_REFERE
+
+`VITE_REFERE` 是用于如果配置了 `github pages` 的自定义域名就要配置一个 `value` 给它，原因：`github pages` 你配置了域名，它的路径就不会添加你的项目名字，变成了根路径 `/`
+
+### 注意事项
+
+**默认情况下 `VITE_REFERE` 的权重要比 `VITE_GITHUB_PAGES_BASE` 要高**，所以不需要 `自定义域名` 请不要往 `VITE_REFERE` 填入 `value`，会覆盖的
+
+>在vitepress中自定义组件并不能读取到你自定义的变量
+
+## 修改环境
+如想修改请前往 `.vitepress > config.ts` 文件中修改代码
+
+```ts
+export default ({ mode }) => {
+  const { VITE_PORT, VITE_BASE, VITE_REFERE, VITE_GITHUB_PAGES_BASE } = loadEnv(
+    mode,
+    process.cwd()
+  )
+  let base = ''
+
+  if (mode === 'development') {
+    base = VITE_BASE
+  }
+  if (mode === 'production') {
+    if (VITE_REFERE) {
+      base = VITE_REFERE
+    } else {
+      base = VITE_GITHUB_PAGES_BASE
+    }
+  }
+  return defineConfig({
+    base,
+  })
+}
+
+```
 
 # 参考资料
 
 `Vitepress` : https://vitepress.qzxdp.cn
 
-前端导航模块由 `茂茂 | maomao 开发`：https://github.com/maomao1996/vitepress-nav-template
+前端导航模块由 `茂茂 | 

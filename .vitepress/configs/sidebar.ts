@@ -1,6 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
-export const sidebar: NonNullable<DefaultTheme.Config['sidebar']> = {
+export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/HTML/': [
     {
       text: 'HTML *',

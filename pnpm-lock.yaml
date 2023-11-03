@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  fast-clone:
-    specifier: ^1.5.13
-    version: 1.5.13
-
 devDependencies:
   '@mdit-vue/shared':
     specifier: ^1.0.0
@@ -16,6 +11,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.8.0
     version: 20.8.0
+  fast-clone:
+    specifier: ^1.5.13
+    version: 1.5.13
   medium-zoom:
     specifier: ^1.0.8
     version: 1.0.8
@@ -741,7 +739,7 @@ packages:
 
   /fast-clone@1.5.13:
     resolution: {integrity: sha512-0ez7coyFBQFjZtId+RJqJ+EQs61w9xARfqjqK0AD9vIUkSxWD4HvPt80+5evebZ1tTnv1GYKrPTipx7kOW5ipA==}
-    dev: false
+    dev: true
 
   /fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}

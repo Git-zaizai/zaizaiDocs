@@ -1,34 +1,36 @@
-import { h, watch, render } from 'vue';
-import { useData, EnhanceAppContext } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
+import { h, watch, render } from 'vue'
+import { useData, EnhanceAppContext } from 'vitepress'
+import DefaultTheme from 'vitepress/theme'
 
-import { createMediumZoomProvider } from './composables/useMediumZoom';
+import { createMediumZoomProvider } from './composables/useMediumZoom'
 
-import './styles/index.scss';
+import './styles/index.scss'
 
-import HoverButton from '/~/hover-button.vue';
+import HoverButton from '/~/hover-button.vue'
+import toNavPage from '/~/to-nav-page.vue'
+import HoverView from '/~/hover-view/hover-view.vue'
 
-let homePageStyle: HTMLStyleElement | undefined;
+let homePageStyle: HTMLStyleElement | undefined
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
-    const props: Record<string, any> = {};
+    const props: Record<string, any> = {}
     // 获取 frontmatter
-    const { frontmatter } = useData();
+    const { frontmatter } = useData()
 
     /* 添加自定义 class */
     if (frontmatter.value?.layoutClass) {
-      props.class = frontmatter.value.layoutClass;
+      props.class = frontmatter.value.layoutClass
     }
 
-    return h(DefaultTheme.Layout, props);
+    return h(DefaultTheme.Layout, props)
   },
   enhanceApp({ app, router }: EnhanceAppContext) {
     // 全局组件
     // app.component('HoverButton', HoverButton);
 
-    createMediumZoomProvider(app, router);
+    createMediumZoomProvider(app, router)
 
     if (typeof window !== 'undefined') {
       watch(
@@ -39,43 +41,52 @@ export default {
             location.pathname === '/' || location.pathname === '/zaizaiDocs/'
           ),
         { immediate: true }
-      );
+      )
 
-      const hoverBut = h(HoverButton);
-      const el = window.document.createElement('div');
-      render(hoverBut, el);
-      window.document.body.appendChild(el);
+      /*   const hoverBut = h(HoverButton)
+      const el = window.document.createElement('div')
+      render(hoverBut, el)
+      window.document.body.appendChild(el)
+
+      const toNavPageCom = h(toNavPage, { router })
+      const el_toNav = window.document.createElement('div')
+      render(toNavPageCom, el_toNav)
+      window.document.body.appendChild(el_toNav) */
+      const HoverViewVNode = h(HoverView, { router })
+      const el = window.document.createElement('div')
+      render(HoverViewVNode, el)
+      window.document.body.appendChild(el)
     }
-  },
-};
+  }
+}
 
 if (typeof window !== 'undefined') {
   // detect browser, add to class for conditional styling
-  const browser = navigator.userAgent.toLowerCase();
+  const browser = navigator.userAgent.toLowerCase()
   if (browser.includes('chrome')) {
-    document.documentElement.classList.add('browser-chrome');
+    document.documentElement.classList.add('browser-chrome')
   } else if (browser.includes('firefox')) {
-    document.documentElement.classList.add('browser-firefox');
+    document.documentElement.classList.add('browser-firefox')
   } else if (browser.includes('safari')) {
-    document.documentElement.classList.add('browser-safari');
+    document.documentElement.classList.add('browser-safari')
   }
 }
 
 // Speed up the rainbow animation on home page
 function updateHomePageStyle(value: boolean) {
   if (value) {
-    if (homePageStyle) return;
+    if (homePageStyle) return
 
-    homePageStyle = document.createElement('style');
+    homePageStyle = document.createElement('style')
     homePageStyle.innerHTML = `
     :root {
       animation: rainbow 12s linear infinite;
-    }`;
-    document.body.appendChild(homePageStyle);
+    }`
+    document.body.appendChild(homePageStyle)
   } else {
-    if (!homePageStyle) return;
+    if (!homePageStyle) return
 
-    homePageStyle.remove();
-    homePageStyle = undefined;
+    homePageStyle.remove()
+    homePageStyle = undefined
   }
 }

@@ -32,6 +32,8 @@ jQuery = javascript Query（查询）。意思是查询 js，把 js 中的 DOM �
 
 ## 2 jQuery 基本使用
 
+[中文文档](https://jquery.cuishifeng.cn/)
+
 ### 2.1 jQuery 下载
 
 ① 官网地址：[jQuery](https://jquery.com/)

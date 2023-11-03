@@ -12,6 +12,7 @@ cache
 dist
 .temp
 .vite
+issues.md
 
 # lock files
 package-lock.json

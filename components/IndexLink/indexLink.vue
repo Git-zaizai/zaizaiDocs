@@ -10,18 +10,10 @@ const props = defineProps<{
   isTe?: boolean;
 }>();
 
-const urlLink = ref('');
 // @ts-ignore
-const { NODE_ENV } = import.meta.env;
+const { BASE_URL } = import.meta.env
+const urlLink = ref(BASE_URL === '/' ? '' : BASE_URL);
 
-console.log('ENV', NODE_ENV);
-
-if (NODE_ENV === 'development') {
-  urlLink.value = '';
-} else {
-  // urlLink.value = '/zaizaiDocs';
-  urlLink.value = '/zaizaiDocs';
-}
 </script>
 
 <template>
@@ -116,4 +108,5 @@ if (NODE_ENV === 'development') {
       font-size: 14px;
     }
   }
-}</style>
+}
+</style>
