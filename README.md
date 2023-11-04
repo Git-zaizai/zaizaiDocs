@@ -63,8 +63,10 @@ VITE_GITHUB_PAGES_BASE = /zaizaiDocs/
 # 有域名填上
 VITE_REFERE = docs.xiaoheizi.one
 ```
+
 ### `VITE_GITHUB_PAGES_BASE`
-`VITE_GITHUB_PAGES_BASE` 是用于 `github pages` 部署时填入的项目名称，一般情况下 `github pages` 部署的路径为 
+
+`VITE_GITHUB_PAGES_BASE` 是用于 `github pages` 部署时填入的项目名称，一般情况下 `github pages` 部署的路径为
 
 `用户名.github.io/项目名字`
 
@@ -78,9 +80,10 @@ VITE_REFERE = docs.xiaoheizi.one
 
 **默认情况下 `VITE_REFERE` 的权重要比 `VITE_GITHUB_PAGES_BASE` 要高**，所以不需要 `自定义域名` 请不要往 `VITE_REFERE` 填入 `value`，会覆盖的
 
->在vitepress中自定义组件并不能读取到你自定义的变量
+>在vitepress中自定义组件并不能读取到你自定义的变量，但是有办法可以[前往](./docs/Miscellaneous/vitepress.md#环境变量注意情况)
 
 ## 修改环境
+
 如想修改请前往 `.vitepress > config.ts` 文件中修改代码
 
 ```ts
@@ -96,7 +99,7 @@ export default ({ mode }) => {
   }
   if (mode === 'production') {
     if (VITE_REFERE) {
-      base = VITE_REFERE
+      base = '/'
     } else {
       base = VITE_GITHUB_PAGES_BASE
     }
@@ -112,4 +115,4 @@ export default ({ mode }) => {
 
 `Vitepress` : https://vitepress.qzxdp.cn
 
-前端导航模块由 `茂茂 | 
+前端导航模块由 `茂茂 | [链接](https://fe-nav.netlify.app/)
