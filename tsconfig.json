@@ -3,19 +3,26 @@
     "outDir": "dist",
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node16",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "/": ["docs/*"],
-      "/~/*": ["/components/*"]
+      "/": ["./docs/*"],
+      "/~/*": ["./components/*"]
     },
     "types": ["node", "vitepress/client"]
   },
   "exclude": ["node_modules", ".vite"],
-  "include": ["env.d.ts", "components/*.ts", "components/*.vue"]
+  "include": [
+    "./env.d.ts",
+    "./components/**/*.ts",
+    "./components/*.ts",
+    "./components/*.vue",
+    "./.vitepress/**/*.ts",
+    "./docs/**/**.ts"
+  ]
 }

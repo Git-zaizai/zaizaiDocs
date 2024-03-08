@@ -1,6 +1,24 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
+  '/notes/': [
+    {
+      text: '随笔',
+      link: '/notes/随笔.md'
+    },
+    {
+      text: 'vue3中使用vite转换md为vue组件',
+      link: '/notes/vue3中使用vite转换md为vue组件.md'
+    },
+    {
+      text: '小程序随笔',
+      link: '/notes/小程序随笔.md'
+    },
+    {
+      text: '油猴API文档',
+      link: '/notes/油猴API文档.md'
+    }
+  ],
   '/HTML/': [
     {
       text: 'HTML *',
@@ -53,7 +71,11 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
           text: 'ES6-11',
           link: '/JavaScript/es6-11'
-        }
+        },
+        {
+          text: 'ESNext',
+          link: '/JavaScript/esnext.md'
+        },
       ]
     },
     {
@@ -93,7 +115,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '基础', link: '/TypeScript/基础.md' },
         { text: '进阶', link: '/TypeScript/进阶.md' },
         { text: '工程', link: '/TypeScript/工程.md' },
-        { text: '可看', link: '/TypeScript/可看.md' }
+        { text: 'tsconfig.json配置', link: '/TypeScript/tsconfig.json配置' },
       ]
     },
     {
@@ -154,7 +176,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         { text: 'React', link: '/React/react' },
         { text: 'react Router', link: '/React/reactRouter' },
-        { text: 'Redux', link: '/React/Redux' }
+        { text: 'hox', link: '/React/hox' },
       ]
     }
   ],
@@ -207,7 +229,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
           text: 'Git系列',
           items: [
-            { text: 'git 使用', link: '/Miscellaneous/git/git使用.md' },
+            { text: 'git', link: '/Miscellaneous/git/git.md' },
             { text: 'git命令合集', link: '/Miscellaneous/git/git命令合集.md' },
             {
               text: 'git命令合集-加强版',

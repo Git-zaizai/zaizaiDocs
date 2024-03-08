@@ -1,9 +1,3 @@
-import type { NavLink } from '/~/MNavLink/type';
-
-type NavData = {
-  title: string;
-  items: NavLink[];
-};
 
 export const NAV_DATA: NavData[] = [
   {
@@ -26,6 +20,12 @@ export const NAV_DATA: NavData[] = [
         desc: '指向github，在主页可以看到链接',
         link: 'https://github.com/xixixiaoyu',
       },
+      {
+        title:'君惜',
+        icon:'https://xinlei3166.github.io/logo.png',
+        desc:'君惜',
+        link:'https://xinlei3166.github.io/'
+      }
     ],
   },
   {
@@ -72,6 +72,11 @@ export const NAV_DATA: NavData[] = [
         link: 'https://chat.openai.com/chat',
       },
       {
+        icon: 'https://cc.ai55.cc/favicon.svg',
+        title: '很多的免费使用',
+        link: 'https://cc.ai55.cc/'
+      },
+      {
         icon: 'https://www.notion.so/images/logo-ios.png',
         title: 'Notion AI（笔记）',
         link: 'https://www.notion.so',
@@ -85,35 +90,6 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://global-uploads.webflow.com/59deb588800ae30001ec19c9/5d4891e0e260e3c1bc37b100_beautiful%20ai%20favicon%20%20blue%20square.png',
         title: 'Beautiful.ai（PPT）',
         link: 'https://www.beautiful.ai',
-      },
-    ],
-  },
-  {
-    title: '茂茂的站点导航',
-    items: [
-      {
-        icon: '/logo.png',
-        title: '前端日常笔记',
-        desc: '日常笔记记录（零零散散啥都记系列）',
-        link: 'https://github.com/maomao1996/daily-notes',
-      },
-      {
-        icon: '/logo.png',
-        title: '前端思维导图',
-        desc: '用思维导图的方式总结个人所学知识',
-        link: 'https://mindmap.fe-mm.com',
-      },
-      {
-        icon: 'https://qwerty.fe-mm.com/apple-touch-icon.png',
-        title: 'Qwerty Learner',
-        desc: '为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件',
-        link: 'https://qwerty.fe-mm.com',
-      },
-      {
-        icon: '/logo.png',
-        title: 'mmPlayer',
-        desc: 'mmPlayer 在线音乐播放器',
-        link: 'https://netease-music.fe-mm.com',
       },
     ],
   },
@@ -629,16 +605,11 @@ export const NAV_DATA: NavData[] = [
     title: '各种网站',
     items: [
       {
-        icon: '',
+        icon: 'http://116.204.106.221/favicon.ico',
         title: '虚拟手机号',
         desc: '有免费的，也有两块钱付费的',
         link: 'https://sms-activate.org/cn',
       },
-      {
-        title: 'GPT',
-        desc: '免费的GPT',
-        link: ' https://chat18.aichatos.xyz',
-      },
-    ],
+    ]
   },
 ];

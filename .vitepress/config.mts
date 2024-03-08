@@ -3,16 +3,21 @@ import type { HeadConfig } from 'vitepress'
 import { resolve, join } from 'node:path'
 import { heads, nav, sidebar } from './configs'
 
+import vuejsx from '@vitejs/plugin-vue-jsx'
 import viteManualInjectEnv from '../vitePlugin/viteManualInjectEnv'
+
+interface NavItem {
+  text: string
+  link: string
+  items?: NavItem
+}
 
 // https://vitepress.dev/reference/site-config
 export default ({ mode }) => {
-  const viteEnv = loadEnv(
-    mode,
-    process.cwd()
-  )
+  const viteEnv = loadEnv(mode, process.cwd())
   let base = ''
   let port = Number(viteEnv.VITE_PORT)
+  let NAV: NavItem[] = [].concat(nav as any)
 
   if (mode === 'development') {
     base = viteEnv.VITE_BASE
@@ -24,7 +29,6 @@ export default ({ mode }) => {
       base = viteEnv.VITE_GITHUB_PAGES_BASE
     }
   }
-
 
   const pathAlias = (path: string) =>
     resolve(join(__dirname, path).replace(/\\/g, '/'))
@@ -71,7 +75,7 @@ export default ({ mode }) => {
       theme: 'one-dark-pro'
     },
     themeConfig: {
-      nav,
+      nav: NAV as any,
       sidebar,
 
       logo: '/logo.png',
@@ -104,7 +108,7 @@ export default ({ mode }) => {
         port,
         host: '0.0.0.0'
       },
-      plugins: [viteManualInjectEnv({ env: viteEnv })]
+      plugins: [viteManualInjectEnv({ env: viteEnv }), vuejsx()]
     }
   })
 }

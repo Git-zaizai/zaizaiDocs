@@ -1,4 +1,4 @@
-# React ｜入门之我终于开始学 React 了！
+# React 入门之
 
 ## 开始前的准备
 
@@ -22,10 +22,6 @@ npm start
 启动有问题：check： [create-react-app.dev/docs/gettin…](https://link.juejin.cn?target=https%3A%2F%2Fcreate-react-app.dev%2Fdocs%2Fgetting-started%2F "https://create-react-app.dev/docs/getting-started/")
 
 兼容问题 node 版本切换：
-
-```shell
-sudo n v14.15.0 // 某个版本号
-```
 
 ### 一、一些基础概念
 
@@ -106,13 +102,14 @@ function MyComp(props) {
 `class组件`(等价写法)：
 
 ```jsx
-
 // 继承于
 React.Component class MyComp extends React.Component {
    constructor(props) {
-   super(props); // props 是组件接收的参数，super表示执行父类的构造函数，完成初始化
-   render() {     // render 方法返回需要展示的视图结构——React元素
-         return <h1>hello {this.props.name}</h1>;
+  // props 是组件接收的参数，super表示执行父类的构造函数，完成初始化
+   super(props); 
+  // render 方法返回需要展示的视图结构——React元素
+   render() {     
+         return <h1>hello {this.props.name}</h1>
       }
    }
 }
@@ -129,9 +126,8 @@ React.Component class MyComp extends React.Component {
 function App() {
   return (
     <div>
-      {" "}
       <MyComp name="A" /> {/* 子组件会通过 this.props.name 接收到 */}
-      <MyComp name="B" /> <MyComp name="C" />{" "}
+      <MyComp name="B" /> <MyComp name="C" />
     </div>
   );
 }
@@ -155,12 +151,15 @@ function Welcome(props) {
 }
 Welcome.defaultProps = { name: "World" };
 ```
-
 组件样式： 外部 CSS 和 内联样式
 
-- <link> 标签引入：作用于所有组件
+- `<link> `标签引入：作用于所有组件
 - import 引入：scoped 局部样式
-- 内联样式：`<div style={{color: 'red'}}></div>` 第一个 {} 表示是 JS 表达式，第二个 {} 表示内部是一个对象，属性名必须使用驼峰式。
+- 内联样式：
+```jsx
+<div style={{color: 'red'}}></div>
+```
+-  第一个 `{}` 表示是 JS 表达式，第二个 `{}` 表示内部是一个对象，属性名必须使用驼峰式。
 
 #### 4、生命周期
 
@@ -194,6 +193,7 @@ componentDidUpdate(prevProps, prevState); // 组件更新之后调用，可以�
 ```js
 componentWillUnmount() { } // 组件被删除前调用，执行一些清理工作
 ```
+
 
 #### 5、state
 
@@ -230,6 +230,7 @@ class MyComp extends React.Component {
 - 确定在 React 中何时重新渲染
 
 不可变性最主要的优势在于它可以帮助我们在 React 中创建  pure components。我们可以很轻松的确定不可变数据是否发生了改变，从而确定何时对组件进行重新渲染。
+
 
 #### 6、事件处理
 
