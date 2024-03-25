@@ -4,11 +4,23 @@ export const NAV_DATA: NavData[] = [
     title: '常用',
     items: [
       {
-        icon: 'http://110.41.157.104/favicon.ico',
+        icon: 'https://xiaoheizishiba.top/favicon.ico',
         title: '( *￣▽￣)(っ´Ι`)っ',
         desc: '( *￣▽￣)',
-        link: 'http://110.41.157.104/',
+        link: 'https://xiaoheizishiba.top/',
       },
+      {
+        icon: 'https://xiaoheizishiba.top/reactnovel/favicon.ico',
+        title: '崽崽记录站',
+        desc: '记录一些东西 react + vite',
+        link: 'https://xiaoheizishiba.top/reactnovel/'
+      },
+      {
+        icon: 'https://docs.xiaoheizi.one/favicon.ico',
+        title: '文档副站',
+        desc: '国内站点，访问快，更新可能慢点',
+        link: 'http://docs.xiaoheizishiba.top/'
+      }
     ],
   },
   {
@@ -21,10 +33,10 @@ export const NAV_DATA: NavData[] = [
         link: 'https://github.com/xixixiaoyu',
       },
       {
-        title:'君惜',
-        icon:'https://xinlei3166.github.io/logo.png',
-        desc:'君惜',
-        link:'https://xinlei3166.github.io/'
+        title: '君惜',
+        icon: 'https://xinlei3166.github.io/logo.png',
+        desc: '君惜',
+        link: 'https://xinlei3166.github.io/'
       }
     ],
   },
@@ -208,6 +220,12 @@ export const NAV_DATA: NavData[] = [
         title: 'VueUse',
         desc: 'Vue Composition API 的常用工具集',
         link: 'https://vueuse.org',
+      },
+      {
+        icon: 'https://www.naiveui.com/assets/naivelogo-XQ1U1Js8.svg',
+        link: 'https://www.naiveui.com/zh-CN/os-theme',
+        title: 'Naive UI',
+        desc: '个 Vue 3 组件库比较完整，主题可调，使用 TypeScript，快有点意思'
       },
       {
         icon: 'https://element-plus.org/images/element-plus-logo-small.svg',

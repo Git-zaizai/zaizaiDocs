@@ -31,23 +31,29 @@
 }
 
 /* slim scroll bar for windows based web browsers - works on chrome, edge, and safari */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 /* scrolling handle */
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: var(--vp-button-alt-hover-bg);
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 /* handle on hover */
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: var(--vp-c-border);
 }
 
 /* scrolling track/backgronund color */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   // background: var(--vp-button-alt-bg);
+  border-radius: 10px;
+  background: transparent; /* 轨道的背景颜色 */
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
 }
