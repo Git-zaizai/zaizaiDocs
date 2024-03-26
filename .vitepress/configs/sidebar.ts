@@ -15,9 +15,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       link: '/notes/小程序随笔.md'
     },
     {
+      text: 'Proxy在node的小妙用',
+      link: '/notes/Proxy在node的小妙用.md'
+    },
+    {
+      text: 'h5下拉刷新上拉(触底)加载',
+      link: '/notes/h5下拉刷新上拉(触底)加载.md'
+    },
+    {
       text: '油猴API文档',
       link: '/notes/油猴API文档.md'
-    }
+    },
   ],
   '/HTML/': [
     {
