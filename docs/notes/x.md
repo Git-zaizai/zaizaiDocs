@@ -28,9 +28,9 @@
 项目名称 ：站点管理系统 （admin 后台） 
 简介： 帮助公司优化和管理其。这个系统主要针对的是企业需要对旗下多个网站进行集中控制和优化的需求，以提高搜索排名、提升网站流量和转化率
 
-技术栈： Vue3 /  Vite / Pinia  / Naive-ui  / echarts / 
+技术栈： Vue3 / Vite / Pinia / Naive-ui / echarts / node / Puppeteer
 责任描述:
-. 封装公共组件与hook方法，如：monacoEditor组件、table组、函数式组件，tablehook等等，提为项目减少了耦合度、代码量和后 期维护难度。
+. 封装公共组件，业务组件，公共方法等，如：monacoEditor组件、table组、函数式组件，tablehook等等，提为项目减少了耦合度、代码量和后 期维护难度。
 . 使用monaco-editor/loader优化了项目体积，同时有CDN加速，优化了网络，组件加载速度提高了60%。
 . 使用markdown-it与shiki实现自定义md转转为vue组件的Vite插件，可以在项目编写md文件为系统后续提供了基础。
 . 自定义聊天，实现了也原版一样的效果，为公司提高了效率。
