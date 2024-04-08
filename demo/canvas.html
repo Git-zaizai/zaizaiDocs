@@ -27,41 +27,36 @@
     const ctx = canvas.getContext("2d");
     canvas.width = state.w
     canvas.height = state.h
-    
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    /* const img = new Image()
+    // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const img = new Image()
     img.src = './111.jpg'
     img.onload = () => {
         ctx.drawImage(img, 10, 10, state.w - 20, state.h - 20);
-    } */
-    ctx.font = '30px Arial';
-    ctx.fillStyle = "#cccccc";
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-    ctx.shadowBlur = 4;
-    ctx.shadowOffsetX = 5;
-    ctx.shadowOffsetY = 5;
+        ctx.font = '26px Arial';
+        ctx.fillStyle = "white";
 
-    const str = "打开爱奇艺app,扫码领取积分,赢取豪华大礼，惊喜等着你~"
-    let lineWidth = 0;
-    let txtlimitWidth = state.w - 90; // 一行文字占用的宽度
-    let initHeight = state.h / 2; // 绘制字体距离canvas顶部初始的高度
-    let lastSubStrIndex = 0; // 每次开始截取的字符串的索引
-    // 绘制文字的时候，如果当绘制的长度超出文字限制长度 txtlimitWidth, 就转行
-    for (let i = 0; i < str.length; i++) {
-        lineWidth += ctx.measureText(str[i]).width;
-        if (lineWidth > txtlimitWidth) {
-            ctx.fillText(str.substring(lastSubStrIndex, i), 20, initHeight); // 绘制截取部分
-            initHeight += 20; // 20为字体的高度
-            lineWidth = 0;
-            lastSubStrIndex = i;
-        }
-        if (i == str.length - 1) { // 绘制剩余部分
-            ctx.fillText(str.substring(lastSubStrIndex, i + 1), 20, initHeight);
+        const str = "打开微信app,扫码领取积分,赢取豪华大礼，惊喜等着你~"
+        let lineWidth = 0;
+        let txtlimitWidth = state.w - 90; // 一行文字占用的宽度
+        let initHeight = state.h / 2; // 绘制字体距离canvas顶部初始的高度
+        let lastSubStrIndex = 0; // 每次开始截取的字符串的索引
+        // 绘制文字的时候，如果当绘制的长度超出文字限制长度 txtlimitWidth, 就转行
+        for (let i = 0; i < str.length; i++) {
+            lineWidth += ctx.measureText(str[i]).width;
+            if (lineWidth > txtlimitWidth) {
+                ctx.fillText(str.substring(lastSubStrIndex, i), 20, initHeight); // 绘制截取部分
+                initHeight += 30; // 20为字体的高度
+                lineWidth = 0;
+                lastSubStrIndex = i;
+            }
+            if (i == str.length - 1) { // 绘制剩余部分
+                ctx.fillText(str.substring(lastSubStrIndex, i + 1), 20, initHeight);
+            }
         }
     }
 
-    ctx.fillText('w', 150, 300)
 
 </script>
 
