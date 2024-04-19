@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+
+    const app = new Vue({
+        el: '#app',
+        data() {
+            return {
+                arr: [1, 2, 3, 4, 5]
+            }
+        },
+        mounted: function () {
+            console.log(this.arr,Array.isArray(this.arr))
+        }
+    })
+    console.log("🚀 ~ app:", app)
+
+    let data = {
+        name: 1,
+        names: [0, 1, 2, 3]
+    }
+
+    const map = new Map()
+    function createDef(obj) {
+        let newobj = {}
+        for (const key in obj) {
+            Object.defineProperty(newobj, key, {
+
+                get() {
+                    return obj[key]
+                },
+                set(newValue) {
+                    console.log('newValue', newValue);
+                }
+            })
+        }
+        return newobj
+    }
+
+
+    function createArray(list) {
+        let newobj = {}
+        let leng = list.length - 1
+        let i = 0
+        while (i < leng) {
+            Object.defineProperty(newobj, i, {
+                get() {
+                    return list[i]
+                },
+                set(newValue) {
+                    console.log('newValue', newValue);
+                }
+            })
+            i++
+        }
+        return newobj
+    }
+
+    let _Data = createDef(data)
+    let arr = [0, 1, 2, 3, 4]
+    let arr1 = createArray(arr)
+    console.log(arr1);
+    arr1[0] = 10
+</script>
+
+</html>
