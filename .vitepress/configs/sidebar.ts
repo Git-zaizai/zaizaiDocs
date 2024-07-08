@@ -145,7 +145,13 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '构建工具',
       items: [
         { text: 'Webpack', link: '/Buildtools/Webpack.md' },
-        { text: 'Vite', link: '/Buildtools/Vite.md' }
+        { text: 'Vite', link: '/Buildtools/Vite.md' },
+        { text: 'vite打包-拆包-合包-异步加载包', link: '/Buildtools/vite打包-拆包-合包-异步加载包.md' },
+        { text: 'rollup-plugin-visualizer使用', link: '/Buildtools/rollup-plugin-visualizer使用.md' },
+        { text: 'vite打包', link: '/Buildtools/vite打包.md' },
+        { text: 'vite打包优化', link: '/Buildtools/vite打包优化.md' },
+        { text: 'vite打包优化实战', link: '/Buildtools/vite打包优化实战.md' },
+
       ]
     },
     {
@@ -261,5 +267,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
 export function getSidebar(
   params: string
 ): NonNullable<DefaultTheme.Config['sidebar']> {
+  // @ts-ignore
   return sidebar[params]
 }

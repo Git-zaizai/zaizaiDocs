@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 前端物语
-      link: /notes/
+      link: /notes/随笔.md
     - theme: alt
       text: 导航->
       link: /nav/

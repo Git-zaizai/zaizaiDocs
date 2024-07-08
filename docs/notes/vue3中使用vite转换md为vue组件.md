@@ -493,3 +493,5 @@ export default async () => {
 	}
 }
 ```
+
+## 抽离 vitrpress的markdown-it 模块插件
