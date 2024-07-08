@@ -85,24 +85,24 @@ include: `**/@pzy915/backend-layout/**`
 
 include: `**/element-plus/**`
 
-![](asserts/rollup-plugin-visualizer使用-2023-02-27-14-28-03.png)
+![](./asserts/rollup-plugin-visualizer使用-2023-02-27-14-28-03.png)
 
 #### 查看指定文件是否被重复引用
 
 include: `**/SearchFormStructWrapper.vue*`
 
-![](asserts/rollup-plugin-visualizer使用-2023-02-27-14-30-28.png)
+![](./asserts/rollup-plugin-visualizer使用-2023-02-27-14-30-28.png)
 
 #### 查看指定第三方包在特定 bunlde 中是哪个文件对他进行了引用
 
 下图可以看出`mitt`包在名为`vendor`的 boundle 中的`@pzy915/router-tabs`组件的`router-tabs.js`文件中被引用
 
-![](asserts/rollup-plugin-visualizer使用-2023-02-27-14-34-46.png)
+![](./asserts/rollup-plugin-visualizer使用-2023-02-27-14-34-46.png)
 
 下图可以看出`mitt`包在名为`vue`的 boundle 中的`src/util/emitter.ts`文件中被引用
 
-![](asserts/rollup-plugin-visualizer使用-2023-02-27-14-37-45.png)
+![](./asserts/rollup-plugin-visualizer使用-2023-02-27-14-37-45.png)
 
 #### 查看某个特定 bundle 的大小
 
-![](asserts/rollup-plugin-visualizer使用-2023-02-27-14-39-44.png)
+![](./asserts/rollup-plugin-visualizer使用-2023-02-27-14-39-44.png)
