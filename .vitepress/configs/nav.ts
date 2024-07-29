@@ -4,7 +4,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   { text: '导航->', link: '/nav/' },
   {
     text: '随笔记',
-    link: '/notes/随笔.md',
+    link: '/随笔记/随笔.md',
 
     /* items: [
       {
