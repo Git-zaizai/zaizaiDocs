@@ -1,30 +1,34 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
-  '/notes/': [
+  '/随笔记/': [
     {
       text: '随笔',
-      link: '/notes/随笔.md'
+      link: '/随笔记/随笔.md'
     },
     {
       text: 'vue3中使用vite转换md为vue组件',
-      link: '/notes/vue3中使用vite转换md为vue组件.md'
+      link: '/随笔记/vue3中使用vite转换md为vue组件.md'
     },
     {
       text: '小程序随笔',
-      link: '/notes/小程序随笔.md'
+      link: '/随笔记/小程序随笔.md'
     },
     {
       text: 'Proxy在node的小妙用',
-      link: '/notes/Proxy在node的小妙用.md'
+      link: '/随笔记/Proxy在node的小妙用.md'
+    },
+    {
+      text: 'node随笔',
+      link: '/随笔记/node随笔.md'
     },
     {
       text: 'h5下拉刷新上拉(触底)加载',
-      link: '/notes/h5下拉刷新上拉(触底)加载.md'
+      link: '/随笔记/h5下拉刷新上拉(触底)加载.md'
     },
     {
       text: '油猴API文档',
-      link: '/notes/油猴API文档.md'
+      link: '/随笔记/油猴API文档.md'
     },
   ],
   '/HTML/': [
