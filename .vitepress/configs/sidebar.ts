@@ -264,6 +264,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: '浏览器知识',
       link: '/Miscellaneous/浏览器知识.md'
+    },
+    {
+      text: '测试',
+      link: '/Miscellaneous/tuchuang-img.md'
     }
   ]
 }
