@@ -116,3 +116,31 @@ BackgroundAudioManager实例全局只能有一个
 	}
 ```
 
+## uniapp 条件编译
+
+之平台特有的组件，打包不生成文件
+
+比如你写了一个组件，只在抖音小程序使用，打包的时候只打包抖音小程序，不生成其他平台的文件，在uniapp这边只能使用 [`pages.json 的条件编译`](https://uniapp.dcloud.net.cn/tutorial/platform.html#pages-json-%E7%9A%84%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91)
+
+写两个文件，一个在抖音文件夹下，一个在普通文件夹下，然后在 pages.json 里指定编译条件
+
+```js
+// #ifdef MP-WEIXIN
+{
+	"path":"pages/index/wx",
+	"style":{
+		"navigationBarTitleText":"winxi",
+	}
+}
+// #endif
+// #ifdef MP-TOUTIAO
+{
+	"path":"pages/index/dy",
+	"style":{
+		"navigationBarTitleText":"douyin",
+	}
+}
+// #endif
+```
+
+

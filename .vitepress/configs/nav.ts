@@ -104,10 +104,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: 'Git',
         link: '/Miscellaneous/git/git.md'
       },
-      {
-        text: 'github自动化部署',
-        link: '/Miscellaneous/git/github自动化部署.md'
-      },
+
       {
         text: 'Puppeteer',
         link: '/Miscellaneous/Puppeteer'
@@ -121,9 +118,9 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/Miscellaneous/浏览器知识.md'
       },
       {
-        text: '表情符号',
-        link: '/Miscellaneous/表情符号.md'
-      },
+        text: '油猴或插件',
+        link: '/Miscellaneous/油猴或插件.md'
+      }
     ]
   }
 ]

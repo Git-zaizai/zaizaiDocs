@@ -30,6 +30,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '油猴API文档',
       link: '/随笔记/油猴API文档.md'
     },
+    {
+      text: 'uniapp系列',
+      link: '/随笔记/uniapp.md'
+    },
+    {
+      text: '.prettierrc 配置',
+      link: '/随笔记/prettierrc'
+    }
   ],
   '/HTML/': [
     {
@@ -266,9 +274,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       link: '/Miscellaneous/浏览器知识.md'
     },
     {
+      text: '表情符号',
+      link: '/Miscellaneous/表情符号.md'
+    },
+    {
       text: '测试',
       link: '/Miscellaneous/tuchuang-img.md'
-    }
+    },
+
   ]
 }
 
